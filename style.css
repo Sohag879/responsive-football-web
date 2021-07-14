@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+header {
+
+    width: 1440px;
+    height: 677px;
+    background-color: #2D25A0;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.heading-title p {
+    width: 485px;
+    height: 192px;
+    margin-left: 161px;
+    margin-top: 196px;
+    font-size: 64px;
+    color: #FFFFFF;
+    padding-bottom: 76px;
+}
+
+.heading-title button {
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    margin-left: 156px;
+    margin-bottom: 169px;
+    background-color: #E02C6D;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.heading-image img {
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-right: 140px;
+    margin-bottom: 86px;
+}
+
+.heading:hover .heading-image img {
+    transform: rotate(40deg);
+}
+
+
+
+/* main */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-left: 60px;
+}
+
+.player {
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
+
+}
+
+.photo img {
+    width: 300px;
+    height: 256px;
+}
+
+.photo-detail {
+    margin-left: 15px;
+
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+.footer-img img {
+    width: 483px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.footer .icon {
+    font-size: 20px;
+}
+
+.footer .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer small {
+    font-weight: bold;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width:688px) {
+    .players {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .heading {
+        grid-template-columns: repeat(1, fr);
+        flex-direction: column;
+    }
+
+
+}
